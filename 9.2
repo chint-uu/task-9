@@ -1,0 +1,16 @@
+try:
+    num = int(input("Enter a number: "))
+    print("Square:", num ** 2)
+except ValueError:
+    print("Error: Invalid input, please enter a number!")
+except Exception as e:
+    print("Unexpected error:", e)
+
+Sample I/O
+Enter a number: 6
+Square: 36
+
+Enter a number: hello
+Error: Invalid input, please enter a number!
+
+
